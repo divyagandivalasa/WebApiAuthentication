@@ -57,15 +57,15 @@ namespace EmployeeService
             //    consumerKey: "",
             //    consumerSecret: "");
 
-            var facebookOptions = new FacebookAuthenticationOptions()
-            {
-                AppId = "",
-                AppSecret = "",
-                BackchannelHttpHandler = new FacebookBackChannelHandler(),
-                UserInformationEndpoint = "https://graph.facebook.com/v2.4/me?fields=id,email"
-            };
-            facebookOptions.Scope.Add("email");
-            app.UseFacebookAuthentication(facebookOptions);
+            //var facebookOptions = new FacebookAuthenticationOptions()
+            //{
+            //    AppId = "",
+            //    AppSecret = "",
+            //    BackchannelHttpHandler = new FacebookBackChannelHandler(),
+            //    UserInformationEndpoint = "https://graph.facebook.com/v2.4/me?fields=id,email"
+            //};
+            //facebookOptions.Scope.Add("email");
+            //app.UseFacebookAuthentication(facebookOptions);
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
